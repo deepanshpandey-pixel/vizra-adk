@@ -13,7 +13,7 @@ use Vizra\VizraADK\Http\Controllers\OpenAICompatibleController;
 | routes are loaded by the AgentServiceProvider.
 |
 */
-
+ 
 Route::post('/interact', [AgentApiController::class, 'handleAgentInteraction'])
     ->name('vizra.api.interact');
 
