@@ -1,5 +1,5 @@
 {
-  "name": "deepanshpandey-pixel/prism",
+  "name": "deepanshpandey-pixel/vizra-adk",
   "version": "0.0.29",
   "description": "Vizra Agent Development Kit - A comprehensive Laravel package for building intelligent AI agents.",
   "keywords": [
@@ -47,8 +47,7 @@
     "php": "^8.2",
     "laravel/framework": "^10.0",
     "league/csv": "^9.23",
-    "livewire/livewire": "^3.0",
-    "deepanshpandey-pixel/prism": "master"
+    "livewire/livewire": "^3.0"
   },
   "require-dev": {
     "orchestra/testbench": "^9.0",
