@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Throwable;
 use Vizra\VizraADK\System\AgentContext;
-
+ 
 /**
  * Tracer Service
  *
