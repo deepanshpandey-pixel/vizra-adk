@@ -809,7 +809,7 @@ class ChatInterface extends Component
         do {
             try {
                 // Use ULID for better uniqueness (time-ordered + random)
-                $sessionId = 'chat-'.Str::ulid()->toString();
+                $sessionId = 'chat-'.(string) Str::ulid();
 
                 // Check if this session ID already exists
                 $exists = AgentSession::where('session_id', $sessionId)->exists();

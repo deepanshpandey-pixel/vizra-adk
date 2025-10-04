@@ -74,7 +74,7 @@ class Tracer
             ]);
         }
 
-        $this->currentTraceId = Str::ulid()->toString();
+        $this->currentTraceId = (string) Str::ulid();
         $this->currentSessionId = $context->getSessionId();
         $this->spanStack = [];
         $this->spanStartTimes = [];
@@ -120,7 +120,7 @@ class Tracer
             return '';
         }
 
-        $spanId = Str::ulid()->toString();
+        $spanId = (string) Str::ulid();
         $parentSpanId = empty($this->spanStack) ? null : end($this->spanStack);
         $startTime = microtime(true);
 
